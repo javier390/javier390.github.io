@@ -54,6 +54,10 @@ To clone this project and run it on your local machine, follow these steps:
 I am passionate about digital development, with experience in both **Frontend** (React, JS) and **Backend** (Node.js, Rust, C++). My main focus is creating modern, efficient solutions with impeccable design.
 
 ---
+## Link portafolio
+https://javier390.github.io/
+
+
 
 ### 📩 Contact
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambiado a 'es' -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas | Javier Avila</title>
+    <!-- 1. CORRECCIÓN DE RUTA CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://kit.fontawesome.com/2193d055c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 2. AGREGAR EL CANVAS SI QUIERES EL EFECTO MATRIX -->
+    <canvas id="matrix"></canvas>
+
+    <header>
+        <nav class="nav"> <!-- Usamos la clase 'nav' de tu index -->
+            <div class="logo">
+                Javier<span>Avila</span>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+                <button id="darkModeToggle">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de título con clase similar a las del index -->
+        <section class="hero-text" style="text-align: center; margin-top: 50px;">
+            <h2 class="section-title">Mis <span>Mascotas</span></h2>
+        </section>
+
+        <!-- 3. CONTENEDOR CON CLASES DE TU CSS -->
+        <section class="projects-container"> 
+            <!-- Usamos las clases de 'project-card' para que hereden los efectos visuales -->
+            <article class="project-card">
+                <div class="project-img"><img src="public/img/terrie.jpg" alt="Mascota 1"></div>
+                <div class="project-info"><h3>Mascota 1</h3></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img"><img src="public/img/caballo.jpeg" alt="Mascota 2"></div>
+                <div class="project-info"><h3>Mascota 2</h3></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img"><img src="public/img/leon.jpeg" alt="Mascota 3"></div>
+                <div class="project-info"><h3>Mascota 3</h3></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img"><img src="public/img/panda.jpg" alt="Mascota 4"></div>
+                <div class="project-info"><h3>Mascota 4</h3></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img"><img src="public/img/perro.jpeg" alt="Mascota 5"></div>
+                <div class="project-info"><h3>Mascota 5</h3></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img"><img src="public/img/chita.jpg" alt="Mascota 6"></div>
+                <div class="project-info"><h3>Mascota 6</h3></div>
+            </article>
+        </section>
+    </main>
+
+    <div style="text-align: center; margin: 20px;">
+        <a href="index.html" class="btn">Ir al menú principal</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Javier Avila - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- 4. IMPORTANTE: LLAMA AL JS PARA EL MATRIX Y MODO OSCURO -->
+    <script src="script.js"></script>
+</body>
+</html>

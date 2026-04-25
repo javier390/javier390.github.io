@@ -1,0 +1,109 @@
+
+
+/* =========================
+   VARIABLES (IMPORTANTE)
+========================= */
+:root {
+    --primary: #04f510;
+    --text-soft: #0f0f0f;
+    --white: #f2f2f5;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    background: #f7f4f4;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    color: var(--white);
+}
+
+/* =========================
+   CANVAS (FONDO MATRIX)
+========================= */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #111;
+    z-index: 100;
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.logo span {
+    color: var(--primary);
+    text-shadow: 
+        0 0 5px var(--primary),
+        0 0 10px var(--primary),
+        0 0 20px var(--primary);
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-soft);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 5px var(--primary);
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+.contenido {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 150px; /* evita que el header lo tape */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+

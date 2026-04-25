@@ -1,0 +1,22 @@
+
+/* =========================
+   2. RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui;
+    background-color: #726a6a;
+    color: var(--white);
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: var(--primary);
+}

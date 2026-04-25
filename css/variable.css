@@ -1,0 +1,12 @@
+/* =========================
+   1. VARIABLES
+========================= */
+:root {
+    --primary: #6c63ff;
+    --bg: #050404;
+    --card: #eeeef0;
+    --text: hsl(120, 100%, 99%);
+    --text-soft: #fffbfb;
+    --radius: 12px;
+    --shadow: 0 10px 25px rgba(13, 255, 13, 0.4);
+ }

@@ -1,0 +1,131 @@
+/* Animaciones */
+.timeline-item,
+.project-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botón arriba */
+.btn-top {
+    position: center;
+    bottom: 20px;
+    right: 20px;
+    background: #4fe015;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+    border-radius: 50%;
+}
+
+/* Link activo */
+.nav-links a.active {
+    color: #00bcd4;
+}
+
+/* NAV SCROLL */
+header.scrolled {
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.7);
+}
+
+/* MENU RESPONSIVE */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #111;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* ANIMACIONES PRO */
+.timeline-item,
+.project-card,
+.hero-text,
+.hero-imagen {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HOVER PROYECTOS */
+.project-card {
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* MODO OSCURO */
+body.dark {
+    background: #ffffff;
+    color: #fff;
+}
+
+body.dark header {
+    background: #111;
+}
+
+/* BOTON DARK */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* CURSOR PRO */
+.cursor {
+    width: 15px;
+    height: 15px;
+    background: #00bcd4;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f0f0f;
+    color: white;
+
+    overflow-x: hidden;  /* evita scroll lateral */
+    overflow-y: auto;    /* PERMITE SCROLL */
+}

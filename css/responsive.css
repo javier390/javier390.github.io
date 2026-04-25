@@ -1,0 +1,26 @@
+
+/* =========================
+   10. RESPONSIVE 
+========================= */
+@media (max-width: 768px) {
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-imagen img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: block;
+        pointer-events: auto;
+    }
+}
+

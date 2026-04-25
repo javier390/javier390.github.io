@@ -1,0 +1,23 @@
+
+/* =========================
+   9. FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #9a999b;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: var(--text-soft);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+}

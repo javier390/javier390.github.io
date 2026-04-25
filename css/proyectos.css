@@ -1,0 +1,81 @@
+
+/* =========================
+   8. PROYECTOS
+========================= */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #000000;
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: 0.3s;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-tech {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.project-tech span {
+    background: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.project-links a {
+    margin-right: 10px;
+    font-size: 0.9rem;
+    color: rgb(90, 243, 1);
+}
+.caja{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 10px;
+}
+
+.caja img {
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.caja img {
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgb(73, 216, 6) ;
+  float: left;
+  justify-content: center;
+   }
